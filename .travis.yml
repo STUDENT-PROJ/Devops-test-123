@@ -1,1 +1,6 @@
-docker build -t myfirstproject .
+dist: trusty
+
+services:
+  - docker
+script:
+  - docker build -t myfirstproject .
