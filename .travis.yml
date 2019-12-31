@@ -3,4 +3,6 @@ dist: trusty
 services:
   - docker
 script:
-  - docker build -t myfirstproject .
+  - docker build -t myfirstproject docker-repo/myfirstproject .
+  - docker login -u "subratnayak" -p "Subrat@12345678"
+  - docker push docker-repo:myfirstproject
